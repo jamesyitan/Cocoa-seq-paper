@@ -1,0 +1,4 @@
+[default]
+anchor1:GAGTGATTGCTTGTGACGCCTT
+umi_length:6
+primer_sequence:GTGYCAGCMGCCGCGGTAA

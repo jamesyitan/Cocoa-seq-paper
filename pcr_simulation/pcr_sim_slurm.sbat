@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --job-name=pcr_sim_slurm
+#SBATCH --mail-user=jamestan@umich.edu
+#SBATCH --mail-type=BEGIN,FAIL,END
+#SBATCH --cpus-per-task=1
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem-per-cpu=200gb
+#SBATCH --time=24:00:00
+#SBATCH --account=ninalin1
+#SBATCH --partition=largemem
+#SBATCH --output=./%x-%j.log
+
+python pcr_sim.py
